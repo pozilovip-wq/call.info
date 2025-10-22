@@ -271,5 +271,17 @@
     Make 1 test submission → Netlify → Forms → call-center.
     Optional: Notifications, reCAPTCHA, Zapier/Make → Google Sheets.
   -->
+  <!-- Hidden form to make Netlify detect call-center -->
+<form name="call-center" netlify netlify-honeypot="bot-field" hidden>
+  <input type="text" name="full_name" />
+  <input type="tel"  name="phone" />
+  <input type="text" name="reason" />
+  <input type="text" name="source" />
+  <input type="text" name="notes" />
+  <input type="text" name="agent" />
+  <input type="date" name="follow_date" />
+  <input type="text" name="status" />
+  <input type="text" name="submitted_at" />
+</form>
 </body>
 </html>
